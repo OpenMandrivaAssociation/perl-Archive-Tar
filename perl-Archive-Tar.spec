@@ -1,7 +1,7 @@
 %define	module	Archive-Tar
 %define	name	perl-%{module}
 %define version 1.38
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Perl module for manipulation of tar archives
 Name:		%{name}
