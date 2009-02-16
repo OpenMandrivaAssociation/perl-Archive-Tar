@@ -3,12 +3,17 @@
 Summary:	Perl module for manipulation of tar archives
 Name:		perl-%{module}
 Version:	1.44
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{module}-%{version}.tar.gz
+Requires:	perl(IO::Compress::Bzip2) >= 2.012
+Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
 BuildRequires:	perl-devel
+BuildRequires:	perl(IO::Compress::Bzip2) >= 2.012
+BuildRequires:	perl(Test::Pod) >= 0.95
+BuildRequires:	perl(Text::Diff)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -27,7 +32,7 @@ and things.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor -d
 %make
 
 %check
@@ -44,7 +49,8 @@ and things.
 %files 
 %defattr(-,root,root)
 %doc README
-%{perl_vendorlib}/Archive
+%{perl_vendorlib}/Archive/Tar
+%{perl_vendorlib}/Archive/Tar.pm
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{_bindir}/*
