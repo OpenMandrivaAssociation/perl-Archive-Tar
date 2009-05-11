@@ -2,8 +2,8 @@
 
 Summary:	Perl module for manipulation of tar archives
 Name:		perl-%{module}
-Version:	1.44
-Release:	%mkrel 2
+Version:	1.48
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
