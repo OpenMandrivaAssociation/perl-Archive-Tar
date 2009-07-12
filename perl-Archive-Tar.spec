@@ -1,27 +1,30 @@
-%define	module	Archive-Tar
+%define	upstream_name	    Archive-Tar
+%define	upstream_version	1.52
 
-Summary:	Perl module for manipulation of tar archives
-Name:		perl-%{module}
-Version:	1.48
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
 Release:	%mkrel 1
-License:	GPL or Artistic
+
+Summary:	Perl upstream_name for manipulation of tar archives
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{module}-%{version}.tar.gz
-Requires:	perl(IO::Compress::Bzip2) >= 2.012
-Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::Compress::Bzip2) >= 2.012
 BuildRequires:	perl(Test::Pod) >= 0.95
 BuildRequires:	perl(Text::Diff)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+Requires:	perl(IO::Compress::Bzip2) >= 2.012
+Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
 
 %description
 Archive::Tar provides an object oriented mechanism for handling tar files. It
 provides class methods for quick and easy files handling while also allowing
 for the creation of tar file objects for custom manipulation. If you have the
-IO::Zlib module installed, Archive::Tar will also support compressed or gzipped
+IO::Zlib upstream_name installed, Archive::Tar will also support compressed or gzipped
 tar files.
 
 An object of class Archive::Tar represents a .tar(.gz) archive full of files
@@ -29,7 +32,7 @@ and things.
 
 %prep
 
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor -d
