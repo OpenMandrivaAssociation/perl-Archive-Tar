@@ -1,5 +1,5 @@
-%define	upstream_name	    Archive-Tar
-%define	upstream_version	1.52
+%define	upstream_name	 Archive-Tar
+%define	upstream_version 1.54
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -11,13 +11,15 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl-devel
 BuildRequires:	perl(IO::Compress::Bzip2) >= 2.012
 BuildRequires:	perl(Test::Pod) >= 0.95
 BuildRequires:	perl(Text::Diff)
+BuildRequires:	perl-devel
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
-Requires:	perl(IO::Compress::Bzip2) >= 2.012
+
+Requires:	perl(IO::Compress::Bzip2)     >= 2.012
 Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
 
 %description
@@ -31,7 +33,6 @@ An object of class Archive::Tar represents a .tar(.gz) archive full of files
 and things.
 
 %prep
-
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
