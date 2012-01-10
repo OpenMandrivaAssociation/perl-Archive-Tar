@@ -1,9 +1,9 @@
 %define	upstream_name	 Archive-Tar
-%define upstream_version 1.68
+%define upstream_version 1.82
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	1
 
 Summary:	Perl upstream_name for manipulation of tar archives
 License:	GPL+ or Artistic
@@ -17,7 +17,6 @@ BuildRequires:	perl(Text::Diff)
 BuildRequires:	perl-devel
 
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 Requires:	perl(IO::Compress::Bzip2)     >= 2.012
 Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
@@ -43,15 +42,9 @@ and things.
 %{__make} test
 
 %install
-%{__rm} -rf %{buildroot}
-
 %makeinstall_std
 
-%clean 
-%{__rm} -rf %{buildroot}
-
 %files 
-%defattr(-,root,root)
 %doc README
 %{perl_vendorlib}/Archive/Tar
 %{perl_vendorlib}/Archive/Tar.pm
