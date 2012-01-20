@@ -20,6 +20,8 @@ BuildArch:	noarch
 
 Requires:	perl(IO::Compress::Bzip2)     >= 2.012
 Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
+# temporary dep due to the perl-5.14 bump
+BuildRequires:  perl-List-MoreUtils >= 0.320.0-4
 
 %description
 Archive::Tar provides an object oriented mechanism for handling tar files. It
