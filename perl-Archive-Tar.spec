@@ -24,9 +24,9 @@ Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
 %description
 Archive::Tar provides an object oriented mechanism for handling tar files. It
 provides class methods for quick and easy files handling while also allowing
-for the creation of tar file objects for custom manipulation. If you have the
-IO::Zlib upstream_name installed, Archive::Tar will also support compressed or gzipped
-tar files.
+for the creation of tar file objects for custom manipulation. If you have
+perl(IO::Zlib) installed, Archive::Tar will also support compressed or
+gzipped tar files.
 
 An object of class Archive::Tar represents a .tar(.gz) archive full of files
 and things.
