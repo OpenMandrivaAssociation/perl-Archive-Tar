@@ -1,15 +1,15 @@
 %define	upstream_name	 Archive-Tar
-%define upstream_version 1.82
+%define upstream_version 1.90
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Perl upstream_name for manipulation of tar archives
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/B/BI/BINGOS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(IO::Compress::Bzip2) >= 2.012
 BuildRequires:	perl(Test::Pod) >= 0.95
