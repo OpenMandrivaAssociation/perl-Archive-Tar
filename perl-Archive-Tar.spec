@@ -81,35 +81,35 @@ make test
 + Revision: 667027
 - mass rebuild
 
-* Mon Aug 23 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.680.0-1mdv2011.0
+* Mon Aug 23 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.680.0-1mdv2011.0
 + Revision: 572217
 - update to 1.68
 
-* Tue Jul 27 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.660.0-1mdv2011.0
+* Tue Jul 27 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.660.0-1mdv2011.0
 + Revision: 561552
 - update to 1.66
 
-* Tue Jul 13 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.640.0-1mdv2011.0
+* Tue Jul 13 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.640.0-1mdv2011.0
 + Revision: 552255
 - update to 1.64
 
-* Mon Apr 26 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.600.0-1mdv2010.1
+* Mon Apr 26 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.600.0-1mdv2010.1
 + Revision: 539069
 - update to 1.60
 
-* Thu Feb 18 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.580.0-1mdv2010.1
+* Thu Feb 18 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.580.0-1mdv2010.1
 + Revision: 507584
 - update to 1.58
 
-* Fri Feb 05 2010 J茅r么me Quelin <jquelin@mandriva.org> 1.560.0-1mdv2010.1
+* Fri Feb 05 2010 J閞鬽e Quelin <jquelin@mandriva.org> 1.560.0-1mdv2010.1
 + Revision: 501139
 - update to 1.56
 
-* Thu Sep 10 2009 J茅r么me Quelin <jquelin@mandriva.org> 1.540.0-1mdv2010.0
+* Thu Sep 10 2009 J閞鬽e Quelin <jquelin@mandriva.org> 1.540.0-1mdv2010.0
 + Revision: 437211
 - update to 1.54
 
-* Sun Jul 12 2009 J茅r么me Quelin <jquelin@mandriva.org> 1.520.0-1mdv2010.0
+* Sun Jul 12 2009 J閞鬽e Quelin <jquelin@mandriva.org> 1.520.0-1mdv2010.0
 + Revision: 395039
 - update to 1.52
 - using %%perl_convert_version
@@ -193,7 +193,7 @@ Import perl-Archive-Tar
 * Wed Nov 24 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 1.22-1mdk
 - 1.22
 
-* Tue Nov 16 2004 Per 脴yvind Karlsen <peroyvind@linux-mandrake.com> 1.21-1mdk
+* Tue Nov 16 2004 Per 貀vind Karlsen <peroyvind@linux-mandrake.com> 1.21-1mdk
 - 1.21
 - fix buildrequires
 
