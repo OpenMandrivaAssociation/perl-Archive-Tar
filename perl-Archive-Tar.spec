@@ -35,7 +35,7 @@ and things.
 %setup -q -n %{modname}-%{modver}
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor -d
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
