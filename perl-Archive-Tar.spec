@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	1
+Release:	3
 
 Summary:	Perl module for manipulation of tar archives
 License:	GPL+ or Artistic
@@ -53,7 +53,8 @@ make test
 %{_bindir}/*
 
 %changelog
-* Sat Dec 29 2012 Per ÿyvind Karlsen <peroyvind@mandriva.org> 1.900.0-1
+* Sat Dec 29 2012 Per ÿyvind Karlsen <peroyvind@mandriva.org> 1.900.0-3
+- add back man pages
 - new version
 
 * Thu Dec 20 2012 Per ÿyvind Karlsen <peroyvind@mandriva.org> 1.820.0-5
@@ -213,4 +214,3 @@ Import perl-Archive-Tar
 * Thu Aug 28 2003 Fran√ßois Pons <fpons@mandrakesoft.com> 1.05-1mdk
 - removed ptar no more available.
 - 1.05.
-
