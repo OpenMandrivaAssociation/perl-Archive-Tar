@@ -1,45 +1,45 @@
-%define	upstream_name	 Archive-Tar
-%define upstream_version 1.82
+%define	modname	Archive-Tar
+%define	modver	1.90
 
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
+Release:	1
 
-Summary:	Perl upstream_name for manipulation of tar archives
+Summary:	Perl module for manipulation of tar archives
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/K/KA/KANE/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		http://search.cpan.org/dist/%{modname}
+Source0:	http://search.cpan.org/CPAN/authors/id/B/BI/BINGOS/%{modname}-%{modver}.tar.gz
 
-BuildRequires:	perl(IO::Compress::Bzip2) >= 2.012
-BuildRequires:	perl(Test::Pod) >= 0.95
+BuildRequires:	perl(IO::Compress::Bzip2)	>= 2.012
+BuildRequires:	perl(Test::Pod)			>= 0.95
 BuildRequires:	perl(Text::Diff)
 BuildRequires:	perl-devel
 
 BuildArch:	noarch
 
-Requires:	perl(IO::Compress::Bzip2)     >= 2.012
-Requires:	perl(IO::Uncompress::Bunzip2) >= 2.012
+Requires:	perl(IO::Compress::Bzip2)	>= 2.012
+Requires:	perl(IO::Uncompress::Bunzip2)	>= 2.012
 
 %description
 Archive::Tar provides an object oriented mechanism for handling tar files. It
 provides class methods for quick and easy files handling while also allowing
 for the creation of tar file objects for custom manipulation. If you have the
-IO::Zlib upstream_name installed, Archive::Tar will also support compressed or gzipped
+IO::Zlib module installed, Archive::Tar will also support compressed or gzipped
 tar files.
 
 An object of class Archive::Tar represents a .tar(.gz) archive full of files
 and things.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor -d
+perl Makefile.PL INSTALLDIRS=vendor -d
 %make
 
 %check
-%{__make} test
+make test
 
 %install
 %makeinstall_std
@@ -52,8 +52,13 @@ and things.
 %{_mandir}/man3/*
 %{_bindir}/*
 
-
 %changelog
+* Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.900.0-1
+- new version
+
+* Thu Dec 20 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.820.0-5
+- rebuild against perl-5.16.2
+
 * Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 1.820.0-4
 + Revision: 765054
 - rebuilt for perl-5.14.2
