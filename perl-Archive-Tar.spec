@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	3
+Release:	4
 
 Summary:	Perl module for manipulation of tar archives
 License:	GPL+ or Artistic
