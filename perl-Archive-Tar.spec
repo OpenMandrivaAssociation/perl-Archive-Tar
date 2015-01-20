@@ -1,10 +1,10 @@
 %define	modname	Archive-Tar
-%define	modver	1.90
+%define	modver	2.04
 
 Summary:	Perl module for manipulation of tar archives
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	13
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
