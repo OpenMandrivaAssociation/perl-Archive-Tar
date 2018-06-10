@@ -1,5 +1,5 @@
 %define	modname	Archive-Tar
-%define	modver	2.26
+%define	modver	2.28
 
 Summary:	Perl module for manipulation of tar archives
 Name:		perl-%{modname}
